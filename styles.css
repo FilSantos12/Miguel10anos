@@ -1,0 +1,86 @@
+@keyframes blinking {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    font-family: 'New Amsterdam', sans-serif;
+    background: linear-gradient(to bottom, #000000, #2e003e,#000000); /* Gradiente do preto ao roxo escuro */
+    color: #00FF00; /* Verde neon */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: transparent; /* Transparente para mostrar o gradiente */
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.blinking-image {
+    animation: blinking 2s infinite;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #FF66FF; /* Rosa neon */
+    margin-top: 10px;
+}
+
+.card {
+    background-color: transparent;
+    border: 1px solid #00FF00; /* Borda verde neon */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 500px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Ajuste de imagem */
+    border-bottom: 1px solid #00FF00; /* Linha inferior verde neon */
+}
+
+.card-title {
+    color: #FF66FF; /* Rosa neon */
+}
+
+.card-text {
+    color: #FFFFFF; /* Texto branco */
+}
+
+.info {
+    padding: 20px;
+    background-color: #330033; /* Roxo escuro */
+    border-radius: 8px;
+    color: #FFFFFF; /* Texto branco */
+    margin-top: 20px; /* Espaçamento para separar as seções */
+}
+
+.info h2 {
+    font-size: 2em;
+    color: #FF66FF; /* Rosa neon */
+}
+
+.info p {
+    font-size: 1.2em;
+    color: #FFFFFF; /* Texto branco */
+}
+
+footer {
+    background-color: transparent; /* Transparente para mostrar o gradiente */
+    padding: 20px;
+    color: #00FF00; /* Verde neon */
+    border-top: 1px solid #00FF00; /* Linha verde neon */
+}
+
+.jumbotron {
+    background-color: #330033; /* Roxo escuro */
+}
