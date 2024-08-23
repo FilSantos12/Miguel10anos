@@ -4,9 +4,16 @@
     100% { opacity: 1; }
 }
 
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
     font-family: 'New Amsterdam', sans-serif;
-    background: linear-gradient(to bottom, #000000, #2e003e,#000000); /* Gradiente do preto ao roxo escuro */
+    background: linear-gradient(to bottom, #000000, #2e003e, #000000); /* Gradiente do preto ao roxo escuro */
     color: #00FF00; /* Verde neon */
     text-align: center;
     margin: 0;
@@ -58,19 +65,19 @@ header h1 {
 
 .info {
     padding: 20px;
-    background-color: #330033; /* Roxo escuro */
+    background-color: transparent; /* Roxo escuro */
     border-radius: 8px;
     color: #FFFFFF; /* Texto branco */
     margin-top: 20px; /* Espaçamento para separar as seções */
 }
 
 .info h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #FF66FF; /* Rosa neon */
 }
 
 .info p {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #FFFFFF; /* Texto branco */
 }
 
@@ -83,4 +90,125 @@ footer {
 
 .jumbotron {
     background-color: #330033; /* Roxo escuro */
+}
+
+/* Classe para o iframe do Google Maps responsivo */
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40%; /* Proporção 16:9 */
+    height: 0;
+    margin-bottom: 20px; /* Espaço extra abaixo do mapa */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove borda ao redor do iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Responsividade usando media queries */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .profile .card {
+        margin-bottom: 15px;
+    }
+
+    .info h2, .images h2 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content {
+        padding: 5px;
+    }
+
+    .info h2, .images h2 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Classe para o iframe do Google Maps responsivo */
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 28.125%; /* Proporção reduzida pela metade */
+    height: 0;
+    margin-bottom: 20px; /* Espaço extra abaixo do mapa */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove borda ao redor do iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/*jumbotron com video*/
+
+.jumbotron {
+    background-color: transparent;
+    position: relative;
+    display: inline-flex;
+    padding: 20px;
+    margin: -10px;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden;
+    height: 400px; /* Altura ajustável */
+}
+
+.jumbotron video {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.video-container video {
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Faz com que o vídeo cubra toda a área */
+
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.overlay-content h1 {
+    font-size: 3em;
+    color: #FF66FF; /* Rosa neon */
+}
+
+.overlay-content p {
+    font-size: 1.5em;
+    color: #00FF00; /* Verde neon */
 }
