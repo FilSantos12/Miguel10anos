@@ -170,11 +170,21 @@ footer {
     border-radius: 8px; /* Bordas arredondadas */
 }
 
-.youtube-icon {
-    width: 24px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    margin-left: 5px; /* Espaçamento entre o texto e o ícone */
-    vertical-align: middle;
-}
+        .youtube-link {
+            display: center;
+            align-items: center;
+            font-size: 1.8em;
+            text-decoration: none;
+            color: #FFFFFF; /* Cor vermelha do YouTube */
+            
+        }
 
+        .youtube-icon {
+            margin-left: 8px; /* Espaço entre o texto e o ícone */
+        }
+
+        .youtube-icon img {
+            width: 50px; /* Tamanho do ícone */
+            height: auto;
+        }
 
