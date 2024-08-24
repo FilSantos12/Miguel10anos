@@ -166,49 +166,5 @@ footer {
     border-radius: 8px; /* Bordas arredondadas */
 }
 
-/*jumbotron com video*/
-
-.jumbotron {
-    background-color: transparent;
-    position: relative;
-    display: inline-flex;
-    padding: 20px;
-    margin: -10px;
-    justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
-    overflow: hidden;
-    height: 400px; /* Altura ajustável */
-}
-
-.jumbotron video {
-    width: auto;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.video-container video {
-    width: auto;
-    height: auto;
-    object-fit: cover; /* Faz com que o vídeo cubra toda a área */
 
 
-.overlay-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
-}
-
-.overlay-content h1 {
-    font-size: 3em;
-    color: #FF66FF; /* Rosa neon */
-}
-
-.overlay-content p {
-    font-size: 1.5em;
-    color: #00FF00; /* Verde neon */
-}
