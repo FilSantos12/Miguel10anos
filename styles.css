@@ -49,6 +49,10 @@ header h1 {
     margin-bottom: 20px;
 }
 
+.card-text {
+    font-size: 1.5em;
+}
+
 .card-img-top {
     height: 500px; /* Altura fixa para todas as imagens */
     object-fit: cover; /* Ajuste de imagem */
@@ -81,6 +85,7 @@ header h1 {
     color: #FFFFFF; /* Texto branco */
 }
 
+
 footer {
     background-color: transparent; /* Transparente para mostrar o gradiente */
     padding: 20px;
@@ -88,9 +93,6 @@ footer {
     border-top: 1px solid #00FF00; /* Linha verde neon */
 }
 
-.jumbotron {
-    background-color: #330033; /* Roxo escuro */
-}
 
 /* Classe para o iframe do Google Maps responsivo */
 .map-responsive {
