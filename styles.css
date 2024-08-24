@@ -170,4 +170,11 @@ footer {
     border-radius: 8px; /* Bordas arredondadas */
 }
 
+.youtube-icon {
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-left: 5px; /* Espaçamento entre o texto e o ícone */
+    vertical-align: middle;
+}
+
 
