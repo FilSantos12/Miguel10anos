@@ -25,12 +25,14 @@ header {
     padding: 20px;
 }
 
-.header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
+.header-content img {
+    width: 100%;
+    max-width: 400px; /* Largura máxima da imagem */
+    height: auto; /* Altura ajustada automaticamente */
+    margin: 0 auto; /* Centralizar horizontalmente */
+    display: block;
 }
+
 
 .blinking-image {
     animation: blinking 2s infinite;
