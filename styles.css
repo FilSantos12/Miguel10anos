@@ -187,4 +187,14 @@ footer {
             width: 50px; /* Tamanho do ícone */
             height: auto;
         }
+@media (min-width: 768px) {
+    .youtube-link img.youtube-icon {
+        width: 40px; /* Aumenta o tamanho em telas médias */
+    }
+}
 
+@media (min-width: 1024px) {
+    .youtube-link img.youtube-icon {
+        width: 50px; /* Aumenta ainda mais em telas grandes */
+    }
+}
